@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Hobby Recommendations</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>🎨 Based on your hobbies, you might enjoy:</h2>
+        <ul>
+            {% for r in recs %}
+                <li>{{ r }}</li>
+            {% endfor %}
+        </ul>
+        <a href="/">🔙 Go Back</a>
+    </div>
+</body>
+</html>
